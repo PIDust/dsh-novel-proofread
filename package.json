@@ -1,0 +1,39 @@
+{
+  "name": "dsh-novel-proofread",
+  "version": "1.0.0",
+  "description": "中文网络小说 txt 一站式校对技能：广告/屏蔽字/乱码/章节结构/重复段落/标点/错别字三维度校对，纯本地运行，不上传任何数据",
+  "type": "module",
+  "main": "plugin.mjs",
+  "types": "plugin.d.ts",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "displayName": "小说校对（novel-proofread）",
+    "pluginType": "skill",
+    "compatibility": {
+      "dsh": "0.2.1-rc.2 || 0.2.1-rc.3",
+      "profiles": ["desktop"],
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible",
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  },
+  "files": [
+    "plugin.mjs",
+    "plugin.d.ts",
+    "cordis.patch.yml",
+    "SKILL.md",
+    "scripts/**",
+    "references/**"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PIDust/dsh-novel-proofread"
+  }
+}

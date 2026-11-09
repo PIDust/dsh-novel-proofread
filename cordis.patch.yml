@@ -1,0 +1,5 @@
+# dsh-novel-proofread bundle patch —— 挂载小说校对 skill 进 profile 插件树
+- insert:
+    - id: dsh-novel-proofread
+      name: dsh-novel-proofread
+      config: {}
